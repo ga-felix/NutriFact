@@ -9,9 +9,9 @@
     <h1>Cálculo do IMC</h1>
     <form action="" method="post">
         <p></p>
-        Altura: <input type="text" value="" name="height"/>
+        Altura: <input type="text" id="height" name="height" placeholder="Alutra (m)" th:value="${height}"/>
         <p></p>
-        Massa: <input type="text" value="" name="mass"/>
+        Massa: <input type="text" id="mass" name="mass" placeholder="Massa (kg)" th:value="${mass}"/>
         <p></p>
         <button type="submit">Calcular IMC</button>
     </form>
