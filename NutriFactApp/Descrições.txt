@@ -1,0 +1,9 @@
+Spring Boot 2.5.6
+- Maven
+- Java 11
+- Jar
+
+Dependências:
+- Spring Web	(build web, aplicação com MVC. Uso do Tomcat)
+- Spring Boot DevTools	(para atualização automática do servidor, sem a necessidade de reiniciar a cada mudança).
+- Thymeleaf	(Permite que páginas HTMLs sejam exibidas corretamente)
