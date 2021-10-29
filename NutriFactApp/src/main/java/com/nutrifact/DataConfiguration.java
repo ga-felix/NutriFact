@@ -1,5 +1,6 @@
 package com.nutrifact;
 
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -16,12 +17,12 @@ public class DataConfiguration
      */
     @Bean
     public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/nutrifact");
-        dataSource.setUsername("root");
-        dataSource.setPassword("nutrifact");
-        return dataSource;
+        DataSourceBuilder dataSource = DataSourceBuilder.create();
+        dataSource.driverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.url("jdbc:mysql://localhost:3306/nutrifact");
+        dataSource.username("root");
+        dataSource.password("nutrifact");
+        return dataSource.build();
     }
 
     /*
