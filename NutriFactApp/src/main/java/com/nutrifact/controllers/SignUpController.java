@@ -10,8 +10,8 @@ public class SignUpController
      * Método responsável por retornar um formulário
      * de cadastro do usuário da aplicação.
      */
-    @RequestMapping("/signUp")
-    public String getFormSignUp() {
-        return "signup/formSignUp";    // Não é necessário especificar a extensão .html
+    @RequestMapping("/signup")
+    public String showFormSignUp() {
+        return "signup/formsignup";
     }
 }

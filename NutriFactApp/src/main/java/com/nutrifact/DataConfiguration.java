@@ -2,6 +2,7 @@ package com.nutrifact;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import javax.sql.DataSource;
 
@@ -9,10 +10,24 @@ import javax.sql.DataSource;
 @Configuration
 public class DataConfiguration
 {
-    /*
+    /**
+     * Anotação Bean para a conexão com o banco.
+     * @return
+     */
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
+        dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/nutrifact");
+        dataSource.setUsername("root");
+        dataSource.setPassword("nutrifact");
+        return dataSource;
+    }
+
+    /*
+    @Bean
+    public JpaVendorAdapter jpaVendorAdapter() {
+
     }
     */
 }
