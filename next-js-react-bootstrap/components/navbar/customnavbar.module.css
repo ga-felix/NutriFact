@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* HEADER */
+.header_background {
+    background-image: linear-gradient(0deg, rgba(33, 37, 41, 0.5), rgba(33, 37, 41, 0.5)), url("/teste/alunos.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.header_text_block {
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    text-align: center;
+    position:sticky;
+    /* border: solid 3px red; */
+}
+
+
+
+/* Nav Items */
+
+.desktop_navbar {
+    /* border: solid 3px green; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border: solid 3px green; */
+}
+
+.desktop_navbar_items_area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 12px;
+    /* font-weight: 900; */
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    /* border: solid 3px red; */
+}
+
+.desktop_navbar_item {
+    color: white;
+    font-weight: bolder;
+    /* border: solid 1px pink; */
+    font-size: 13px;
+    /* margin-left: 1vw; */
+}
+
+#desktop_navbar_item_dropdown {
+    color: white;
+    font-weight: bolder;
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#desktop_navbar_item_dropdown_item {
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+#button_nos_apoie {
+    margin-left: 1vw;
+    border: solid 1px #ef7b20;
+    background-color: transparent;
+    color:  #ef7b20;
+    padding: 5px 25px 5px 25px;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#button_nos_apoie:hover {
+    background-color:  #ef7b20;
+    color: white;
+    font-size: larger; 
+}
+
+
+/* Mobile */
+.mobile_button_area {
+    /* border: solid 3px red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.logoarea {
+    /* border: solid 3px blue; */
+}
+
+#nav_hamburger_button {
+    background-color: transparent;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+}
+
+#nav_hamburger_button:focus {
+    border: none !important;
+}
+
+/* Modal */
+.modal_button {
+    background-color: white; /* Green */
+    border: none;
+    color: black;
+    text-decoration: none;
+  }
+
+.modal_button:active::selection {
+    background-color: red;
+}
+
+#list_nos_apoie {
+    font-weight: bold;
+}
+
+/* mobile *************************/

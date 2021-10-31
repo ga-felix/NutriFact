@@ -1,0 +1,34 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+:root {
+  
+  /* Cores da Palheta */
+  --laranja: #EF7A20;
+  --azul-escuro: #15385D;
+  
+  --azul-medio: #3D76BA;
+  --azul-claro: #75A5D6;
+
+  /* Cores Complementares */
+  --rosa: #DC74A1;
+  --azul: #3B668C;
+
+  --amarelo: #FDC41C;
+  --coral: #EE7153;
+}
