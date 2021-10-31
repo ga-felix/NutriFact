@@ -100,6 +100,7 @@ public class CalculateBMIController
         context.setVariable("resultBMI", resultBMI);
         templateEngine.process("calculateResultBMI", context, writer);
 //        model.addAttribute("resultBMI", resultBMI);
+//       Verificar retorno
 
         return "calculateResultBMI";
     }
