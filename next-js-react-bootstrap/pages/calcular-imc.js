@@ -9,7 +9,7 @@ export default function Home () {
     <>
       <Head>
         <title>Nutrifact - Calcular IMC</title>
-        <meta name='description' content='Página inicial do site do Cursinho da EACH' />
+        <meta name='description' content='Página inicial NutriFact' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
