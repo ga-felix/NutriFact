@@ -16,7 +16,12 @@ a {
 }
 
 
+
 :root {
+
+  ul {
+    list-style-type: none;
+  }
   
   /* Cores da Palheta */
   --laranja: #EF7A20;

@@ -1,5 +1,7 @@
-import styles from './layout.module.css'
+import Sidebar from '../sidebar/sidebar'
 
 export default function Layout ({ children }) {
-  return <div className={styles.container}>{children}</div>
+  return (
+    <Sidebar>{children}</Sidebar>
+  )
 }
