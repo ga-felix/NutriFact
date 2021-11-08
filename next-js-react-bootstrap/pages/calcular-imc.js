@@ -27,16 +27,6 @@ export default function Home () {
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
-              <Form.Group controlId='exampleForm.SelectCustom'>
-                <Form.Label>Custom select</Form.Label>
-                <Form.Control as='select' custom>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                </Form.Control>
-              </Form.Group>
 
               <Form.Group className='mb-3' controlId='formBasicPassword'>
                 <Form.Label>Password</Form.Label>
