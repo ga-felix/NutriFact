@@ -44,7 +44,7 @@ export default function Alimentos (props) {
               <span className={styles.tooltip}> Valores nutricionais </span>
             </li>
             <li>
-              <Link href='/calcular-imc' passHref>
+              <Link href='/calcularImc' passHref>
                 <a href='#'>
                   <i> <FontAwesomeIcon icon={faWeight} /> </i>
                   <span className={styles.linksName}> Cálcular IMC </span>

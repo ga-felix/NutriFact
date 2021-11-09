@@ -18,11 +18,10 @@ export default function Alimentos (props) {
   }
   return (
     <>
-      <Card key={props.chave}>
-        <Accordion.Toggle as={Card.Header} eventKey={props.chave}>
-          {props.category}
-        </Accordion.Toggle>
-        <Accordion.Collapse eventKey={props.chave}>
+
+      <Accordion.Item eventKey={props.chave}>
+        <Accordion.Header>{props.category}</Accordion.Header>
+        <Accordion.Body>
           <ListGroup>
             {props.alimentos.map((data, key) => {
               return (
@@ -32,8 +31,8 @@ export default function Alimentos (props) {
               )
             })}
           </ListGroup>
-        </Accordion.Collapse>
-      </Card>
+        </Accordion.Body>
+      </Accordion.Item>
     </>
   )
 }
