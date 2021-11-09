@@ -95,9 +95,9 @@ export default function Alimentos (props) {
           <div className={styles.profileContent}>
             <div className={styles.profile}>
               <div className={styles.profileDetails}>
-                <img src='./Equipe.jpeg' />
+                <img src='./icon.png' />
                 <div className={styles.nameJob}>
-                  <div className={styles.name}> Vinicius Santana </div>
+                  <div className={styles.name}> Olivia </div>
                   <div className={styles.job}> Software Engineer </div>
                 </div>
               </div>

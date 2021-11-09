@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Form, Button, Row, Col, Container } from 'react-bootstrap'
+import { Row, Col, Container } from 'react-bootstrap'
 
 import styles from './index.module.css'
 
