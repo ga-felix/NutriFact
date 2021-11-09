@@ -15,7 +15,7 @@ export default function CalcularImc () {
 
   const handlerCalculate = (event) => {
     event.preventDefault() // Comando responsável por prevenir de dar refresh na página ao enviar o formulário.
-
+    calcularIMC(altura, massa)
     // Alternativa 1
     // const formData = event.target
     // formData.map(el => {
@@ -25,20 +25,16 @@ export default function CalcularImc () {
     // Alternativa 2
     // console.log(formData[0].value)
     // console.log(formData[1].value)
-
-    const resultadoIMC = calcularIMC(altura, massa)
-
-    setResultado(resultadoIMC)
-
-    console.log(resultado)
   }
 
   const calcularIMC = (alt, mas) => {
     const resultado = (mas / (alt * alt)).toFixed(2)
 
+    setResultado(resultado)
+
     switch (true) {
       case (resultado <= 18.5):
-        setMessage(`De acordo com a OMS, seu IMC está abaixo do recomendado para a sua altura ${resultado}`)
+        setMessage('De acordo com a OMS, seu IMC está abaixo do recomendado para a sua altura.')
         setVariante('danger')
         break
       case (resultado > 18.5 && resultado <= 24.9):
@@ -54,10 +50,10 @@ export default function CalcularImc () {
         setVariante('danger')
         break
       default:
-        console.log('Sorry, we are out of sei la')
+        setResultado('0')
+        setMessage('Não foi possível calcular seu IMC. Verifique os valores inseridos.')
+        setVariante('primary')
     }
-
-    return resultado
   }
 
   return (
