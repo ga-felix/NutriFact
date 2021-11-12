@@ -20,7 +20,6 @@ Tecnologias utilizadas:</br>
 - Linguagem de programação: Java SE 11;</br>
 - Template: Thymeleaf</br>
 </br>
-</br>
 
 ### Maiores detalhes em:
 
