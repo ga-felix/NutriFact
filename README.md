@@ -21,7 +21,9 @@ Tecnologias utilizadas:</br>
 - Template: Thymeleaf</br>
 </br>
 </br>
+
 ### Maiores detalhes em:
+
 https://github.com/ga-felix/NutriFact/blob/main/NutriFactApp/artifacts/relatorio.pdf</br>
 </br>
 A aplicação não tem a pretenção de substituir um profisisonal da área.</br>
