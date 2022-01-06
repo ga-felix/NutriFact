@@ -17,7 +17,7 @@ export default function Alimentos (props) {
               <i> <FontAwesomeIcon icon={faAppleAlt} /> </i>
               <div className={styles.logoName}> Nutrifact </div>
             </div>
-            <FontAwesomeIcon icon={faBars} id={styles.button} />
+            {/* <FontAwesomeIcon icon={faBars} id={styles.button} /> */}
           </div>
           <ul className={styles.navList}>
             <li>

@@ -1,6 +1,29 @@
 #pageTitle {
-    margin: 10px;
+    margin: 20px 20px 20px 20px;
     color: #1d1b31;
+}
+
+.introducao {
+    margin: 0px 20px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introducao .info {
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    max-width: 41vw;
+    text-align: justify;
+}
+
+.calcularImc {
+    /* border: solid 1px gray; */
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .formContainer {
@@ -30,4 +53,8 @@
 
 .tabelaIMC th, .tabelaIMC td {
     padding: 20px !important;
+}
+
+.resultado {
+    margin: 20px 0px 20px 20px;
 }

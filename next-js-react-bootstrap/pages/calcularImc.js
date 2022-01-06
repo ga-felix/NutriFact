@@ -62,35 +62,54 @@ export default function CalcularImc () {
 
         <h1 id={styles.pageTitle}> Calcular IMC </h1>
 
-        <Form className={styles.formContainer}>
-          <Form.Group className='mb-3' controlId='formBasicEmail'>
-            <Form.Label>Altura</Form.Label>
-            <Form.Control type='text' value={altura} onChange={(e) => setAltura(e.target.value)} placeholder='Metros' />
-          </Form.Group>
+        <div className={styles.introducao}>
+          <div className={styles.info}>
+            <h3>O que é IMC?</h3>
+            <p>
+              IMC significa Índice de Massa Corporal e é um parâmetro utilizado para saber se o peso está de acordo com a altura, o que pode interferir diretamente na saúde e qualidade de vida da pessoa. Assim, a partir do resultado do IMC é possível saber também se a pessoa está dentro do peso ideal e também identificar sobrepeso, obesidade ou desnutrição em crianças, adolescentes, adultos ou idosos.
+              Dessa forma, com o cálculo do IMC, é possível fazer algumas mudanças na rotina diária, como mudar a dieta, melhorar os hábitos alimentares e praticar atividade física de forma regular, por exemplo.
+            </p>
+          </div>
+          <div className={styles.info}>
+            <h3>Por que é importante saber o IMC?</h3>
+            <p>
+              Saber o IMC é importante para verificar se o peso está de acordo com a altura da pessoa, além de ser importante para saber se existe risco de desenvolver alguma doença. No caso das crianças, o IMC é importante para saber se o desenvolvimento está de acordo com o esperado.
 
-          <Form.Group className='mb-3' controlId='formBasicPassword'>
-            <Form.Label>Massa</Form.Label>
-            <Form.Control type='text' value={massa} onChange={(e) => setMassa(e.target.value)} placeholder='Quilograma' />
-          </Form.Group>
+              Além disso, sabendo o IMC, é possível também verificar qual o peso ideal e, assim, saber se a pessoa está acima ou abaixo do peso recomendado para a sua altura. Veja como é feito o cálculo do peso ideal.
+            </p>
+          </div>
+        </div>
 
-          <Button variant='primary' type='button' onClick={handlerCalculate}>
-            Calcular
-          </Button>
-        </Form>
+        <div className={styles.calcularImc}>
+          <Form className={styles.formContainer}>
+            <h3>Calcule seu IMC</h3>
+            <p>Insira seus dados para calcularmos seu IMC</p>
+            <Form.Group className='mb-3' controlId='formBasicEmail'>
+              <Form.Label>Altura</Form.Label>
+              <Form.Control type='text' value={altura} onChange={(e) => setAltura(e.target.value)} placeholder='Exemplo: 1.75' />
+            </Form.Group>
+
+            <Form.Group className='mb-3' controlId='formBasicPassword'>
+              <Form.Label>Peso</Form.Label>
+              <Form.Control type='text' value={massa} onChange={(e) => setMassa(e.target.value)} placeholder='Em quilogramas. Exemplo: 70' />
+            </Form.Group>
+
+            <Button variant='primary' type='button' onClick={handlerCalculate}>
+              Calcular
+            </Button>
+          </Form>
+        </div>
 
         {resultado && (
-          <Row>
-            <Col lg={1} md={1} sm={0} xs={0} />
-            <Col lg={10} md={10} sm={12} xs={12}>
-              <Alert variant={variante}>
-                <Alert.Heading>Resultado</Alert.Heading>
-                <hr />
-                <p> Seu IMC é de <b>{resultado} kg/m².</b></p>
-                {message}
-              </Alert>
-            </Col>
-            <Col lg={1} md={1} sm={0} xs={0} />
-          </Row>
+          <div className={styles.resultado}>
+            <Alert variant={variante}>
+              <Alert.Heading>Resultado</Alert.Heading>
+              <hr />
+              <p> Seu IMC é de <b>{resultado} kg/m².</b></p>
+              {message}
+            </Alert>
+          </div>
+
         )}
 
         <div className={styles.tabelaContainer}>
