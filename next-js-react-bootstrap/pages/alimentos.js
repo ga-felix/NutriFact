@@ -126,37 +126,25 @@ export default function Alimentos (props) {
       </Head>
       <Layout>
         <h1 id={styles.pageTitle}> Valores Nutricionais</h1>
-        <Row>
-          <Col lg={1} md={1} sm={0} xs={0} />
-          <Col lg={10} md={10} sm={12} xs={12}>
-            {/* <Accordion>
-            {props.categorias.map((data, key) => {
-              key = key + 1
-              return (
-                <Category key={key} chave={key} data={data} alimentos={props.categoria1} show={setShow} />
-              )
-            })}
-          </Accordion> */}
-            <Accordion>
-              <Category key={1} chave={1} category='Cereais e derivados' alimentos={props.categoria1} show={setShow} alimento={setAlimento} />
-              <Category key={2} chave={2} category='Verduras, hortaliças e derivados' alimentos={props.categoria2} show={setShow} alimento={setAlimento} />
-              <Category key={3} chave={3} category='Frutas e derivados' alimentos={props.categoria3} show={setShow} alimento={setAlimento} />
-              <Category key={4} chave={4} category='Gorduras e óleos' alimentos={props.categoria4} show={setShow} alimento={setAlimento} />
-              <Category key={5} chave={5} category='Pescados e frutos do mar' alimentos={props.categoria5} show={setShow} alimento={setAlimento} />
-              <Category key={6} chave={6} category='Carnes e derivados' alimentos={props.categoria6} show={setShow} alimento={setAlimento} />
-              <Category key={7} chave={7} category='Leite e derivados' alimentos={props.categoria7} show={setShow} alimento={setAlimento} />
-              <Category key={8} chave={8} category='Bebidas' alimentos={props.categoria8} show={setShow} alimento={setAlimento} />
-              <Category key={9} chave={9} category='Ovos e derivados' alimentos={props.categoria9} show={setShow} alimento={setAlimento} />
-              <Category key={10} chave={10} category='Produtos açucarados' alimentos={props.categoria10} show={setShow} alimento={setAlimento} />
-              <Category key={11} chave={11} category='Miscelâneas' alimentos={props.categoria11} show={setShow} alimento={setAlimento} />
-              <Category key={12} chave={12} category='Outros alimentos industrializados' alimentos={props.categoria12} show={setShow} alimento={setAlimento} />
-              <Category key={13} chave={13} category='Alimentos preparados' alimentos={props.categoria13} show={setShow} alimento={setAlimento} />
-              <Category key={14} chave={14} category='Leguminosas e derivados' alimentos={props.categoria14} show={setShow} alimento={setAlimento} />
-              <Category key={15} chave={15} category='Nozes e semestes' alimentos={props.categoria15} show={setShow} alimento={setAlimento} />
-            </Accordion>
-          </Col>
-          <Col lg={10} md={10} sm={0} xs={0} />
-        </Row>
+        <div className={styles.table}>
+          <Accordion className={styles.accordion}>
+            <Category key={1} chave={1} category='Cereais e derivados' alimentos={props.categoria1} show={setShow} alimento={setAlimento} />
+            <Category key={2} chave={2} category='Verduras, hortaliças e derivados' alimentos={props.categoria2} show={setShow} alimento={setAlimento} />
+            <Category key={3} chave={3} category='Frutas e derivados' alimentos={props.categoria3} show={setShow} alimento={setAlimento} />
+            <Category key={4} chave={4} category='Gorduras e óleos' alimentos={props.categoria4} show={setShow} alimento={setAlimento} />
+            <Category key={5} chave={5} category='Pescados e frutos do mar' alimentos={props.categoria5} show={setShow} alimento={setAlimento} />
+            <Category key={6} chave={6} category='Carnes e derivados' alimentos={props.categoria6} show={setShow} alimento={setAlimento} />
+            <Category key={7} chave={7} category='Leite e derivados' alimentos={props.categoria7} show={setShow} alimento={setAlimento} />
+            <Category key={8} chave={8} category='Bebidas' alimentos={props.categoria8} show={setShow} alimento={setAlimento} />
+            <Category key={9} chave={9} category='Ovos e derivados' alimentos={props.categoria9} show={setShow} alimento={setAlimento} />
+            <Category key={10} chave={10} category='Produtos açucarados' alimentos={props.categoria10} show={setShow} alimento={setAlimento} />
+            <Category key={11} chave={11} category='Miscelâneas' alimentos={props.categoria11} show={setShow} alimento={setAlimento} />
+            <Category key={12} chave={12} category='Outros alimentos industrializados' alimentos={props.categoria12} show={setShow} alimento={setAlimento} />
+            <Category key={13} chave={13} category='Alimentos preparados' alimentos={props.categoria13} show={setShow} alimento={setAlimento} />
+            <Category key={14} chave={14} category='Leguminosas e derivados' alimentos={props.categoria14} show={setShow} alimento={setAlimento} />
+            <Category key={15} chave={15} category='Nozes e semestes' alimentos={props.categoria15} show={setShow} alimento={setAlimento} />
+          </Accordion>
+        </div>
 
         <InfoComida
           alimento={alimento}

@@ -3,6 +3,8 @@ import React, { useState } from 'react'
 import fetch from 'node-fetch'
 import { Accordion, Card, ListGroup } from 'react-bootstrap'
 
+import styles from './category.module.css'
+
 export default function Alimentos (props) {
   const fetchData = async (key) => {
     const req = await fetch('http://localhost:4000/api/v1/food/' + key)
@@ -19,14 +21,18 @@ export default function Alimentos (props) {
   return (
     <>
 
-      <Accordion.Item eventKey={props.chave}>
-        <Accordion.Header>{props.category}</Accordion.Header>
-        <Accordion.Body>
+      <Accordion.Item eventKey={props.chave} className={styles.noBorder}>
+        <Accordion.Header>
+          <div id={styles.bold}>
+            {props.category}
+          </div>
+        </Accordion.Header>
+        <Accordion.Body className={styles.accordionBody}>
           <ListGroup>
             {props.alimentos.map((data, key) => {
               return (
-                <ListGroup.Item key={data.id} action onClick={() => handleClick(data.id)}>
-                  {data.description}
+                <ListGroup.Item className={styles.item} key={data.id} action onClick={() => handleClick(data.id)}>
+                  &gt; {data.description}
                 </ListGroup.Item>
               )
             })}

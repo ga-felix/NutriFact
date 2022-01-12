@@ -46,9 +46,6 @@ function InfoComida (props) {
           </tbody>
         </Table>
       </Modal.Body>
-      <Modal.Footer>
-        <Button onClick={props.onHide}>Close</Button>
-      </Modal.Footer>
     </Modal>
   )
 }

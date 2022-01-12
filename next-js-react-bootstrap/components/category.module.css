@@ -1,0 +1,15 @@
+.accordionBody {
+    padding: 0;
+}
+
+.noBorder {
+    border: none;
+}
+
+.item {
+    border: none;
+}
+
+#bold {
+    font-weight: 600;
+}
