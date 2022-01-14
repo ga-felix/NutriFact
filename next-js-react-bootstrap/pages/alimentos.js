@@ -2,9 +2,8 @@ import fetch from 'node-fetch'
 import React, { useState } from 'react'
 
 import Head from 'next/head'
-import 'bootstrap/dist/css/bootstrap.min.css'
 
-import { Row, Col, Accordion } from 'react-bootstrap'
+import { Accordion } from 'react-bootstrap'
 
 import styles from './alimentos.module.css'
 
