@@ -25,37 +25,13 @@ public class CalculateBMIController
         return "calculateBMI/calculatebmi";
     }
 
-    /*
-    @PostMapping("/CalculateBMI")
-    public String calculateBMI(@RequestParam String height, @RequestParam String mass, Model model)
-    {
-        double valueHeight;
-        double valueMass;
-
-        try {
-            valueHeight = Double.parseDouble(height);
-        } catch (NumberFormatException e) {
-            valueHeight = 0;
-        }
-
-        try {
-            valueMass = Double.parseDouble(mass);
-        } catch (NumberFormatException e) {
-            valueMass = 0;
-        }
-
-        resultBMI = valueMass / Math.pow(valueHeight, 2);
-
-        return "calculateResultBMI";
-    }
-    */
 
     /**
      * Método responsável por gerar um contexto, que por sua vez
      * será enviado como resposta para a página calculateResultBMI
      * @return templateResolver
      */
-    @Bean
+
     public ClassLoaderTemplateResolver templateResolver()
     {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
@@ -66,7 +42,7 @@ public class CalculateBMIController
         return templateResolver;
     }
 
-    @Bean
+
     public SpringTemplateEngine templateEngine() {
         SpringTemplateEngine templateEngine = new SpringTemplateEngine();
         templateEngine.setTemplateResolver(templateResolver());
